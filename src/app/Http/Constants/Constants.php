@@ -1,6 +1,6 @@
 <?php
 
-namespace Usermp\LaravelLogin\app\Http\Constants;
+namespace LotousOrganization\LaravelLogin\app\Http\Constants;
 
 class Constants
 {

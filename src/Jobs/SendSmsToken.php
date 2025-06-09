@@ -1,6 +1,6 @@
 <?php
 
-namespace Usermp\LaravelLogin\Jobs;
+namespace LotousOrganization\LaravelLogin\Jobs;
 
 use Sentry\SentrySdk;
 use Kavenegar\KavenegarApi;

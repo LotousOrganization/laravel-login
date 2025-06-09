@@ -1,6 +1,6 @@
 <?php
 
-namespace Usermp\LaravelLogin\app\Http\Services;
+namespace LotousOrganization\LaravelLogin\app\Http\Services;
 
 class Helpers
 {

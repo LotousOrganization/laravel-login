@@ -1,26 +1,18 @@
 {
-    "name": "usermp/laravel-login",
+    "name": "lotous-organization/laravel-login",
     "description": "Simple laravel login",
-    "keywords": ["laravel", "framework"],
     "license": "MIT",
-    "require": {
-        "php": "^8.1",
-        "guzzlehttp/guzzle": "*",
-        "kavenegar/laravel": "*",
-        "laravel/passport": "*",
-        "laravel/framework": "*",
-        "sentry/sentry-laravel": "*"
-    },
     "autoload": {
         "psr-4": {
-            "Usermp\\LaravelLogin\\": "src/"
+            "LotousOrganization\\LaravelLogin\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "mohammad",
-            "email": "usermp76@gmail.com"
+            "name": "mohammadreza",
+            "email": "esmaeeli1923@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {}
 }

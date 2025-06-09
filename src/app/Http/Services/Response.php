@@ -6,7 +6,7 @@
  * Contains constants for HTTP status codes and methods for creating responses with those status codes
  */
 
-namespace Usermp\LaravelLogin\app\Http\Services;
+namespace LotousOrganization\LaravelLogin\app\Http\Services;
 
 use Illuminate\Http\JsonResponse;
 

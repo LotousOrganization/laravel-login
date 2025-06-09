@@ -1,10 +1,10 @@
 <?php
 
-namespace Usermp\LaravelLogin\app\Http\Requests\Auth;
+namespace LotousOrganization\LaravelLogin\app\Http\Requests\Auth;
 
-use Usermp\LaravelLogin\app\Rules\Username;
+use LotousOrganization\LaravelLogin\app\Rules\Username;
 use Illuminate\Contracts\Validation\ValidationRule;
-use Usermp\LaravelLogin\app\Http\Requests\BaseRequest;
+use LotousOrganization\LaravelLogin\app\Http\Requests\BaseRequest;
 
 class SignupRequest extends BaseRequest
 {

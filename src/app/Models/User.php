@@ -1,6 +1,6 @@
 <?php
 
-namespace Usermp\LaravelLogin\app\Models;
+namespace LotousOrganization\LaravelLogin\app\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

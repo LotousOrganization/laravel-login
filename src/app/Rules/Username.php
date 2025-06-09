@@ -1,6 +1,6 @@
 <?php
 
-namespace Usermp\LaravelLogin\app\Rules;
+namespace LotousOrganization\LaravelLogin\app\Rules;
 
 use Closure;
 use Illuminate\Contracts\Validation\ValidationRule;

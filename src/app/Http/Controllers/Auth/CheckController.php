@@ -1,16 +1,16 @@
 <?php
 
-namespace Usermp\LaravelLogin\app\Http\Controllers\Auth;
+namespace LotousOrganization\LaravelLogin\app\Http\Controllers\Auth;
 
 use Illuminate\Routing\Controller;
 use Carbon\Carbon;
-use Usermp\LaravelLogin\app\Models\Otp;
-use Usermp\LaravelLogin\app\Models\User;
-use Usermp\LaravelLogin\Jobs\SendSmsToken;
-use Usermp\LaravelLogin\app\Http\Services\Helpers;
-use Usermp\LaravelLogin\app\Http\Services\Response;
-use Usermp\LaravelLogin\app\Http\Constants\Constants;
-use Usermp\LaravelLogin\app\Http\Requests\Auth\LoginCheckRequest;
+use LotousOrganization\LaravelLogin\app\Models\Otp;
+use LotousOrganization\LaravelLogin\app\Models\User;
+use LotousOrganization\LaravelLogin\Jobs\SendSmsToken;
+use LotousOrganization\LaravelLogin\app\Http\Services\Helpers;
+use LotousOrganization\LaravelLogin\app\Http\Services\Response;
+use LotousOrganization\LaravelLogin\app\Http\Constants\Constants;
+use LotousOrganization\LaravelLogin\app\Http\Requests\Auth\LoginCheckRequest;
 
 class CheckController extends Controller
 {

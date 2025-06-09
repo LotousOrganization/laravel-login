@@ -33,7 +33,7 @@ To install the package, follow these steps:
     ```php
     'providers' => [
         // Other Service Providers
-        Usermp\LaravelLogin\LoginServiceProvider::class,
+        LotousOrganization\LaravelLogin\LoginServiceProvider::class,
     ],
     ```
 

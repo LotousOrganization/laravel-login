@@ -1,11 +1,11 @@
 <?php
 
-namespace Usermp\LaravelLogin\app\Http\Controllers\Auth;
+namespace LotousOrganization\LaravelLogin\app\Http\Controllers\Auth;
 
 
 use Illuminate\Routing\Controller;
-use Usermp\LaravelLogin\app\Http\Services\Response;
-use Usermp\LaravelLogin\app\Http\Constants\Constants;
+use LotousOrganization\LaravelLogin\app\Http\Services\Response;
+use LotousOrganization\LaravelLogin\app\Http\Constants\Constants;
 
 class InfoController extends Controller
 {

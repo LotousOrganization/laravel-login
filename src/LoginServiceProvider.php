@@ -1,6 +1,6 @@
 <?php
 
-namespace Usermp\LaravelLogin;
+namespace LotousOrganization\LaravelLogin;
 
 use Illuminate\Support\ServiceProvider;
 
