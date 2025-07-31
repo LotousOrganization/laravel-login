@@ -2,7 +2,7 @@
 
 namespace LotousOrganization\LaravelLogin\Jobs;
 
-use App\Services\KavenegarService;
+use LotousOrganization\LaravelLogin\app\Services\KavenegarService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Queue\SerializesModels;
