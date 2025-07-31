@@ -21,7 +21,7 @@ To install the package, follow these steps:
 
     # Kavenegar API settings
     KAVENEGAR_API_KEY=""
-    KAVENEGAR_SENDER=""
+    KAVENEGAR_TEMPLATE=""
 
     # Sentry configuration
     SENTRY_LARAVEL_DSN=""
