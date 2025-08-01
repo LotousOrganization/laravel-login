@@ -26,7 +26,6 @@ class KavenegarService
         ]);
 
         if ($response->successful()) {
-            Log::info('Kavenegar OTP sent.', $response->json());
             return $response->json();
         }
 
