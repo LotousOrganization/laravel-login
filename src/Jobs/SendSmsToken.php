@@ -25,7 +25,7 @@ class SendSmsToken implements ShouldQueue
 
     public function handle(KavenegarService $kavenegarService): void
     {
-        $template = env("KAVENEGAR_TEMPLATE");
+        $template = config('kavenegar.kavenegar.template');
 
         $response = $kavenegarService->sendOtp(
             $this->phoneNumber,
