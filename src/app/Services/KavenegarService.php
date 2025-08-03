@@ -12,7 +12,7 @@ class KavenegarService
 
     public function __construct()
     {
-        $this->apiKey = env("KAVENEGAR_API_KEY");
+        $this->apiKey = config('kavenegar.kavenegar.api_key');
     }
 
     public function sendOtp(string $phoneNumber, string $otp, string $template): ?array
