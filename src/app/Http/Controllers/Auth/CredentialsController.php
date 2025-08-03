@@ -61,7 +61,7 @@ class CredentialsController extends Controller
         $user = User::where('phone', $otpRecord->username)->first();
 
         if (!$user) {
-            if (env('REGISTER_IF_NOT_EXISTS', false)) {
+            if (config('kavenegar.kavenegar.register_if_not_exists')) {
                 $user = User::create([
                     "phone" => $otpRecord->username
                 ]);
