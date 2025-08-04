@@ -99,7 +99,21 @@ class CredentialsController extends Controller
             return Response::error(Constants::ERROR_LOGIN, 401);
         }
 
-        $user['token'] = $user->createToken('Laravel Password Grant Client')->accessToken;
-        return Response::success("", $user);
+        $tokenResult = $user->createToken('Personal Access Token');
+
+        $token = $tokenResult->token;
+
+        $token->expires_at = Carbon::now()->addDays(1);
+        $token->save();
+
+        $response = [
+            'access_token' => $user->createToken('Laravel Password Grant Client')->accessToken,
+            'refresh_token' => null,
+            'token_type' => 'Bearer',
+            'expires_at' => $token->expires_at->toDateTimeString(),
+            'user' => $user
+        ];
+
+        return Response::success("", $response);
     }
 }
