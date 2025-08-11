@@ -17,19 +17,29 @@ class KavenegarService
 
     public function sendOtp(string $phoneNumber, string $otp, string $template): ?array
     {
-        $url = "https://api.kavenegar.com/v1/{$this->apiKey}/verify/lookup.json";
+        try {
+            $url = "https://api.kavenegar.com/v1/{$this->apiKey}/verify/lookup.json";
 
-        $response = Http::timeout(20)->get($url, [
-            'receptor' => $phoneNumber,
-            'token'    => $otp,
-            'template' => $template,
-        ]);
+            $response = Http::timeout(20)->get($url, [
+                'receptor' => $phoneNumber,
+                'token'    => $otp,
+                'template' => $template,
+            ]);
 
-        if ($response->successful()) {
-            return $response->json();
+            if ($response->successful()) {
+                return $response->json();
+            }
+
+            $this->reportError($response);
+        } catch (\Throwable $e) {
+            logger()->error('Send OTP failed: ' . $e->getMessage(), [
+                'phone'    => $phoneNumber,
+                'otp'      => $otp,
+                'template' => $template,
+                'trace'    => $e->getTraceAsString(),
+            ]);
         }
 
-        $this->reportError($response);
         return null;
     }
 
